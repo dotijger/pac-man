@@ -1,0 +1,20 @@
+[project]
+name = "pac-man"
+version = "0.1.0"
+description = "Implementation of Pac-Man"
+readme = "README.md"
+requires-python = ">= 3.12"
+dependencies = [
+    "mazegen",
+    "pydantic>=2.14.4",
+    "pygame-ce>=2.5.8",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.5.0",
+    "mypy>=2.4.1",
+]
+
+[tool.uv.sources]
+mazegen = { path = "lib/mazegen-1.0.0-py3-none-any.whl" }
