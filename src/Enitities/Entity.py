@@ -80,5 +80,5 @@ class Moveable_Entity(Entity):
 
     def collision(self, other: Entity) -> None:
         # maybe here, maybe elsewhere
-        return super().collision(other)
+        pass
 
